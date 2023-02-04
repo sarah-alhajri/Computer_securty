@@ -1,2 +1,2 @@
-The input Plaintext is : Entered plain text is: 3
-The Ciphertext is : 1553
+Entered plain text is :Security is cool
+The Ciphertext is : Xjhzwnyd nx httq
