@@ -9,9 +9,16 @@ public class Vigenere
         
 System.out.println("Plaese enter the plain text:");
 String text = sc.nextLine();
+while(!check(text)){
+    System.out.println("Please Rewrite a letter");
+    text= sc.nextLine();}
 Entered_text=("Entered plain text is :"+text);
+
 System.out.println("Plaese enter the key:");
 String key = sc.nextLine();
+while(!check(key)){
+    System.out.println("Please use letter only");
+    key= sc.nextLine();}
         String result = "";
         text = text.toUpperCase();
         key = key.toUpperCase();
@@ -32,9 +39,15 @@ String key = sc.nextLine();
         String result = "";
         System.out.println("Plaese enter the cipher text:");
         String text = sc.nextLine();
+        while(!check(text)){
+            System.out.println("Please Rewrite a letter");
+            text= sc.nextLine();}
         Entered_text=("Entered plain text is :"+text);
         System.out.println("Plaese enter the key:");
         String key = sc.nextLine();
+        while(!check(key)){
+            System.out.println("Please Rewrite a letter");
+            key= sc.nextLine();}
         text = text.toUpperCase();
         key = key.toUpperCase();
         for (int i = 0, j = 0; i < text.length(); i++)
@@ -47,6 +60,24 @@ String key = sc.nextLine();
         }
          System.out.print("The Plaintext Is :" +result);
         return result;
+    }
+
+
+
+
+
+   
+
+     static boolean check (String name) {
+        char[] chars = name.toCharArray();
+    
+        for (char c : chars) {
+            if(!Character.isLetter(c)) {
+                return false;
+            }
+        }
+    
+        return true;
     }
    
 }
