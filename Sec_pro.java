@@ -9,7 +9,7 @@ public class Sec_pro {
         FileWriter file = new FileWriter("Output.txt");  
 	      BufferedWriter buffer = new BufferedWriter(file);
 
-        System.out.println("what cryptosystems do you want to use? ");
+        System.out.println("What cryptosystem do you want to use? ");
         System.out.println("1- Shift Cipher \n2- RSA Algorithm \n3- Viginere Algorithm ");
         int c=myReader.nextInt();
         while ( c > 3 || c < 1) {
