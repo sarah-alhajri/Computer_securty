@@ -154,7 +154,4 @@ BigInteger msgback = (C.pow(e)).mod(N);
 return msgback;
  
 }
-
-
 }
-

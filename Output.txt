@@ -1,2 +1,2 @@
-Entered plain text is :h i 5 5 
-The Ciphertext is : t u 5 5 
+Entered plain text is :tht 66
+The Plaintext is :ese 66

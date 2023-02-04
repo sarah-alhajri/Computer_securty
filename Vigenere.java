@@ -68,9 +68,7 @@ while(!check(key)){
         for (char c : chars) {
             if(!Character.isLetter(c)) {
                 return false;
-            }
-        }
-    
+            } }   
         return true;
     }
    

@@ -51,8 +51,7 @@ public class Sec_pro {
                 buffer.write(RSA.Entered_text+"\n");
                 buffer.write("The Plaintext is : " +result+"\n");
                 }
-                
-	       
+                  
         break;
         /////////
         case 3:
