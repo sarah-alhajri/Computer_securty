@@ -1,4 +1,6 @@
 import java.util.*;
+
+import javax.lang.model.util.ElementScanner14;
 public class Shift {
     static String Entered_text;
   static Scanner sc = new Scanner (System.in);
@@ -16,6 +18,10 @@ public class Shift {
     key = sc.nextInt();
 
       for (int i=0; i<str.length(); i++) {
+            if(((Character.isSpace(str.charAt(i))))){
+                char ch = ' ';
+            result.append(ch); } //space condition
+            else{
           if (Character.isUpperCase(str.charAt(i))){
               char ch = (char)(((int)str.charAt(i) + key - 65) % 26 + 65);
               result.append(ch);
@@ -24,7 +30,11 @@ public class Shift {
               char ch = (char)(((int)str.charAt(i) + key - 97) % 26 + 97);
               result.append(ch);
           }
-      }
+       
+         
+      
+     }    }  
+                     
       System.out.print("The Ciphertext Is :" +result);
       return result;
   }
@@ -41,6 +51,10 @@ public class Shift {
     key = sc.nextInt();
 
       for (int i=0; i<str.length(); i++) {
+        if(((Character.isSpace(str.charAt(i))))){
+            char ch = ' ';
+        result.append(ch); } //space condition
+        else {
           if (Character.isUpperCase(str.charAt(i))){
               char ch = (char)(((int)str.charAt(i) - key - 65 +26 ) % 26 + 65);
               result.append(ch);
@@ -48,7 +62,7 @@ public class Shift {
           else {
               char ch = (char)(((int)str.charAt(i) - key - 97 +26) % 26 + 97);
               result.append(ch);
-          }
+          }}
       }
       System.out.print("The Plaintext Is :" +result);
       return result;
