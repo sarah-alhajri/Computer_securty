@@ -1,2 +1,2 @@
-The input Plaintext is : Entered plain text is :hello hi 
-The Ciphertext is : axeeh ab 
+The input Plaintext is : Entered plain text is: 3
+The Ciphertext is : 1553

@@ -1,6 +1,4 @@
 import java.util.*;
-
-import javax.lang.model.util.ElementScanner14;
 public class Shift {
     static String Entered_text;
   static Scanner sc = new Scanner (System.in);

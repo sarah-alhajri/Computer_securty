@@ -26,13 +26,13 @@ public class Sec_pro {
                 if(c2==1){
                 // go to enc
                 StringBuffer result = Shift.encrypt();
-                buffer.write("The input Plaintext is : "+Shift.Entered_text+"\n");
+                buffer.write(Shift.Entered_text+"\n");
                 buffer.write("The Ciphertext is : "+result.toString()+"\n");
                 }
                 if(c2==2){
                 // go to dec
                 StringBuffer result =Shift.decrypt();
-                buffer.write("The input Ciphertext is : "+Shift.Entered_text+"\n");
+                buffer.write(Shift.Entered_text+"\n");
                 buffer.write("The Plaintext is :" +result.toString()+"\n");
                 }
                               
@@ -42,13 +42,13 @@ public class Sec_pro {
               if(c2==1){
                 /// go to enc
                 BigInteger result =RSA.Encryption();
-                buffer.write("The input Plaintext is : "+RSA.Entered_text+"\n");
+                buffer.write(RSA.Entered_text+"\n");
                 buffer.write("The Ciphertext is : "+result+"\n");
               }
                 if(c2==2){
                     // go to dec
                 BigInteger result =RSA.Decryption();
-                buffer.write("The input Ciphertext is : "+RSA.Entered_text+"\n");
+                buffer.write(RSA.Entered_text+"\n");
                 buffer.write("The Plaintext is : " +result+"\n");
                 }
                 
@@ -59,13 +59,13 @@ public class Sec_pro {
         if(c2==1){
           /// go to enc
           String result = Vigenere.encrypt();
-          buffer.write("The input Plaintext is : "+Vigenere.Entered_text+"\n");
+          buffer.write(Vigenere.Entered_text+"\n");
           buffer.write("The Ciphertext is :"+result+"\n");
             }
           if(c2==2){
               // go to dec
               String result = Vigenere.decrypt();
-              buffer.write("The input Ciphertext is : "+Vigenere.Entered_text+"\n");
+              buffer.write(Vigenere.Entered_text+"\n");
           buffer.write("The Plaintext is :" +result+"\n");
           }
           
