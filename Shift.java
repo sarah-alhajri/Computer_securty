@@ -18,7 +18,7 @@ public class Shift {
     key = sc.nextInt();
 
       for (int i=0; i<str.length(); i++) {
-            if(((Character.isSpace(str.charAt(i))))){
+            if(((Character.isWhitespace(str.charAt(i))))){
                 char ch = ' ';
             result.append(ch); } //space condition
             else{
@@ -51,7 +51,7 @@ public class Shift {
     key = sc.nextInt();
 
       for (int i=0; i<str.length(); i++) {
-        if(((Character.isSpace(str.charAt(i))))){
+        if(((Character.isWhitespace(str.charAt(i))))){
             char ch = ' ';
         result.append(ch); } //space condition
         else {
