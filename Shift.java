@@ -27,12 +27,7 @@ public class Shift {
           else {
               char ch = (char)(((int)str.charAt(i) + key - 97) % 26 + 97);
               result.append(ch);
-          }
-       
-         
-      
-     }    }  
-                     
+          }  }    }                   
       System.out.print("The Ciphertext Is :" +result);
       return result;
   }
