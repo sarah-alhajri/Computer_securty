@@ -62,12 +62,6 @@ while(!check(key)){
         return result;
     }
 
-
-
-
-
-   
-
      static boolean check (String name) {
         char[] chars = name.toCharArray();
     

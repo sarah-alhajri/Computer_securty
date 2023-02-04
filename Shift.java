@@ -16,23 +16,24 @@ public class Shift {
     key = sc.nextInt();
 
       for (int i=0; i<str.length(); i++) {
-            if(((Character.isWhitespace(str.charAt(i))))){
-                char ch = ' ';
-            result.append(ch); } //space condition
-            else{
-          if (Character.isUpperCase(str.charAt(i))){
+        if (!(Character.isLetter(str.charAt(i) ) ) ){
+            char ch = str.charAt(i);
+            result.append(ch); } //not a letter
+
+            
+         else if (Character.isUpperCase(str.charAt(i))){
               char ch = (char)(((int)str.charAt(i) + key - 65) % 26 + 65);
               result.append(ch);
           }
           else {
               char ch = (char)(((int)str.charAt(i) + key - 97) % 26 + 97);
               result.append(ch);
-          }  }    }                   
+          }    }                   
       System.out.print("The Ciphertext Is :" +result);
       return result;
   }
 
-  public static StringBuffer decrypt(){
+    public static StringBuffer decrypt(){
     String str = new String(); int key = 0; 
     StringBuffer result= new StringBuffer();
    
@@ -44,18 +45,20 @@ public class Shift {
     key = sc.nextInt();
 
       for (int i=0; i<str.length(); i++) {
-        if(((Character.isWhitespace(str.charAt(i))))){
-            char ch = ' ';
-        result.append(ch); } //space condition
-        else {
-          if (Character.isUpperCase(str.charAt(i))){
+      
+        if (!(Character.isLetter(str.charAt(i) ) ) ){
+            char ch = str.charAt(i);
+            result.append(ch); } //not a letter
+        
+    
+        else if (Character.isUpperCase(str.charAt(i))){ // capital letters
               char ch = (char)(((int)str.charAt(i) - key - 65 +26 ) % 26 + 65);
               result.append(ch);
           }
-          else {
+          else { // small letters
               char ch = (char)(((int)str.charAt(i) - key - 97 +26) % 26 + 97);
               result.append(ch);
-          }}
+          }
       }
       System.out.print("The Plaintext Is :" +result);
       return result;
